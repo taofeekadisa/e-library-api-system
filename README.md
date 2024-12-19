@@ -147,6 +147,7 @@ e-library-api
 - GET /users/{user_id}/status - Validate Activate User
 
 <h4> Book Endpoints </h4>
+
 - POST /books/ - Add a new book.
 - GET /books/ - Retrieve all books
 - GET /books/{book_id} - Retrieve a book by ID.
@@ -156,10 +157,11 @@ e-library-api
 - GET /books/{book_id}/status - Validate book availability
 
 <h4> Borrow Endpoints </h4>
-- POST /borrow/ - Borrow a book.
-- PATCH /borrow/return/{borrow_id} - Return a borrowed book.
+
+- POST /borrow/{user_id}/{book_id} - Borrow a book.
+- POST /borrow/{borrow_id} - Return a borrowed book.
 - GET /borrow/records - Get all borrowing records.
-- GET /borrow/records/{borrow_d} - Get single borrow record
+- GET /borrow/records/{borrow_id} - Get single borrow record
 - GET /borrow/records/{user_id} - Get borrowing records for a specific user.
 
 <h3> Testing </h3>
