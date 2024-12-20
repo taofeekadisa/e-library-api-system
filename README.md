@@ -1,38 +1,46 @@
 <h1> E-Library API System </h1>
 
 <h3> Description</h3>
+
 <p>
-The **E-Library API System** is a backend service for managing an online library. It provides endpoints to manage users, books, and borrowing operations, allowing users to borrow and return books while keeping track of book availability and user activity. 
+The <b>E-Library API System</b> is a backend service for managing an online library. It provides endpoints to manage users, books, and borrowing operations, allowing users to borrow and return books while keeping track of book availability and user activity. 
 </p>
+
 <p>
-This project is built with **FastAPI** and uses **in-memory data structures** for storage, making it lightweight and easy to set up.
+This project is built with <b>FastAPI</b> and uses <b>in-memory data structures</b> for storage, making it lightweight and easy to set up.
 </p>
 
 <h3> Features </h3>
 
-<h4> **User Management** : </h4>
+<h4> <b>User Management</b> : </h4>
+
 - Create, read, update, and delete users.
 - Deactivate user accounts.
 
-<h4> **Book Management** : </h4>
+<h4> <b>Book Management</b> : </h4>
+
 - Create, read, update, and delete books.
 - Mark books as unavailable for borrowing.
 
-<h4> **Borrow Operation** : </h4>
+<h4> <b>Borrow Operation</b> : </h4>
+
 - Borrow available books if the user is active.
 - Return borrowed books and update their availability.
 - Prevent duplicate borrowing of the same book by the same user.
 
-<h4> **Borrow Record Management** : </h4>
+<h4> <b>Borrow Record Management</b> : </h4>
+
 - View all borrowing records.
 - View borrowing records for a specific user.
 
 <h3> Tech Stack </h3>
-- **Framework** : FastAPI
-- **Language** : Python
-- **Data Storage** : In-memory structures (dictionaries)
+
+- <b>Framework</b> : FastAPI
+- <b>Language</b> : Python
+- <b>Data Storage</b> : In-memory structures (dictionaries)
 
 <h3> Installation </h3>
+
 - Python 3.9 or higher
 - `pip` package manager
 
